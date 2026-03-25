@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Invitation</title>
+
+<!-- Google Fonts -->
+
+<!--
+project
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── images
+    ├── hero.jpg
+    ├── story.jpg
+    ├── quote-bg.jpg
+    ├── invite-bg.jpg
+    ├── g1.jpg
+    ├── g2.jpg
+    ├── g3.jpg
+    └── g4.jpg
+-->
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<!-- Swiper CSS -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- GLightbox -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<!-- Main CSS -->
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Particle Canvas -->
+
+<canvas id="particles"></canvas>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-image-container">
+<img src="images/hero.jpg" class="hero-img">
+<div class="overlay-gradient"></div>
+</div>
+
+<div class="hero-content">
+<p class="pre-title">We Are Getting Married</p>
+
+<h1 class="main-title">
+<span class="name-line">Surya</span>
+<span class="name-line">&</span>
+<span class="name-line">Alekhya</span>
+</h1>
+
+<p class="date">February 27, 2026</p>
+</div>
+
+</section>
+
+<!-- STORY SECTION -->
+
+<section class="story">
+
+<div class="container">
+
+<div class="story-content">
+<h2>Our Story</h2>
+
+<p>
+Two hearts, one journey. Our story began with a simple meeting
+and grew into a lifetime promise.
+</p>
+
+<p>
+With love, laughter, and blessings from our families,
+we are excited to start this beautiful chapter together.
+</p>
+</div>
+
+<div class="story-image-wrapper">
+<img src="images/story.jpg" class="blend-image-right">
+</div>
+
+</div>
+
+</section>
+
+<!-- QUOTE PARALLAX -->
+
+<section class="quote-section">
+
+<div class="quote-bg">
+<img src="images/quote-bg.jpg">
+</div>
+
+<div class="quote-overlay"></div>
+
+<div class="quote-text">
+<blockquote>
+“Two souls with but a single thought,
+two hearts that beat as one.”
+</blockquote>
+</div>
+
+</section>
+
+<!-- INVITATION + COUNTDOWN -->
+
+<section class="invitation-section">
+
+<div class="invitation-bg">
+<img src="images/invite-bg.jpg" class="zoom-bg">
+</div>
+
+<div class="invitation-overlay"></div>
+
+<div class="invitation-content">
+
+<h2>Save The Date</h2>
+
+<p class="date-text">February 27, 2026</p>
+
+<div class="countdown-container" id="countdown">
+
+<div class="time-box">
+<span id="days">00</span>
+<span class="label">Days</span>
+</div>
+
+<div class="time-box">
+<span id="hours">00</span>
+<span class="label">Hours</span>
+</div>
+
+<div class="time-box">
+<span id="minutes">00</span>
+<span class="label">Minutes</span>
+</div>
+
+<div class="time-box">
+<span id="seconds">00</span>
+<span class="label">Seconds</span>
+</div>
+
+</div>
+
+<div class="invite-message">
+
+<svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 21s-6.5-4.35-10-9C-1 7.5 2 3 6.5 3 9 3 12 5 12 5s3-2 5.5-2C22 3 25 7.5 22 12c-3.5 4.65-10 9-10 9z"/>
+</svg>
+
+<h3>You Are Invited</h3>
+
+<p>
+With the blessings of our parents,
+we invite you to celebrate our wedding.
+</p>
+
+<p class="b-text">
+Your presence will make our day even more special.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EVENT DETAILS -->
+
+<section class="details">
+
+<h2>Wedding Details</h2>
+
+<div class="details-grid">
+
+<div class="detail-card">
+<h3>Ceremony</h3>
+<p>February 27, 2026</p>
+<p>9:00 AM</p>
+</div>
+
+<div class="detail-card">
+<h3>Reception</h3>
+<p>February 27, 2026</p>
+<p>7:00 PM</p>
+</div>
+
+<div class="detail-card">
+<h3>Venue</h3>
+<p>Grand Convention Hall</p>
+<p>Hyderabad</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery-preview">
+
+<h2>Memories</h2>
+
+<div class="swiper mySwiper">
+
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<a href="images/g1.jpg" class="glightbox">
+<img src="images/g1.jpg">
+</a>
+</div>
+
+<div class="swiper-slide">
+<a href="images/g2.jpg" class="glightbox">
+<img src="images/g2.jpg">
+</a>
+</div>
+
+<div class="swiper-slide">
+<a href="images/g3.jpg" class="glightbox">
+<img src="images/g3.jpg">
+</a>
+</div>
+
+<div class="swiper-slide">
+<a href="images/g4.jpg" class="glightbox">
+<img src="images/g4.jpg">
+</a>
+</div>
+
+</div>
+
+<div class="swiper-pagination"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<p>With Love — Surya & Alekhya</p>
+</footer>
+
+<!-- GSAP -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Swiper -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- GLightbox -->
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- Main Script -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
