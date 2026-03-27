@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     function initCountdown() {
         // User requested countdown to Marriage Date: Feb 25, 2026
         // Month is 0-indexed (0=Jan, 1=Feb). So 1 is February.
-        const countdownDate = new Date(2026, 1, 27, 9, 0, 0).getTime();
+        //const countdownDate = new Date(2026, , 02, 9, 0, 0).getTime();
+		const countdownDate = new Date("2026-04-02T21:41:00"); // 9:41 PM
         const countdownContainer = document.getElementById("countdown");
         const daysEl = document.getElementById("days");
         const hoursEl = document.getElementById("hours");
